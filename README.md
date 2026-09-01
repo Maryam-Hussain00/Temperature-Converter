@@ -1,16 +1,138 @@
-# React + Vite
+# 🌡️ Temperature Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Temperature Converter** built with **React.js**.
+The application allows users to enter a temperature, select the source and target units, and instantly convert the value between **Celsius, Fahrenheit, and Kelvin**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🔄 Convert temperatures between:
 
-## React Compiler
+  * Celsius (°C)
+  * Fahrenheit (°F)
+  * Kelvin (K)
+* ⚡ Instant temperature conversion
+* 🔁 Swap "From" and "To" temperature units
+* ❌ Handles invalid/non-numeric input
+* 🧩 Built using reusable React components
+* 📱 Responsive and user-friendly interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+* **React.js**
+* **JavaScript**
+* **Tailwind CSS**
+* **Vite**
+* **HTML5**
+* **Git & GitHub**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+Temperature-Converter/
+│
+├── src/
+│   ├── components/
+│   │   ├── TempInput.jsx
+│   │   ├── TempFrom.jsx
+│   │   ├── TempTo.jsx
+│   │   ├── ShiftBtn.jsx
+│   │   └── TempOutput.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Maryam-Hussain00/Temperature-Converter.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Temperature-Converter
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local development URL provided by Vite in your browser.
+
+## 🔢 Conversion Formulas
+
+### Celsius → Fahrenheit
+
+```text
+°F = (°C × 9/5) + 32
+```
+
+### Fahrenheit → Celsius
+
+```text
+°C = (°F − 32) × 5/9
+```
+
+### Celsius → Kelvin
+
+```text
+K = °C + 273.15
+```
+
+### Kelvin → Celsius
+
+```text
+°C = K − 273.15
+```
+
+### Fahrenheit → Kelvin
+
+```text
+K = (°F − 32) × 5/9 + 273.15
+```
+
+### Kelvin → Fahrenheit
+
+```text
+°F = (K − 273.15) × 9/5 + 32
+```
+
+## 🎯 Purpose
+
+This project was created as a **React.js practice project** to strengthen my understanding of:
+
+* React components
+* `useState`
+* State management
+* Event handling
+* Conditional rendering
+* Form/input handling
+* JavaScript functions
+* Temperature conversion logic
+* Component-based UI development
+
+## 👩‍💻 Author
+
+**Maryam Hussain**
+
+GitHub: [Maryam-Hussain00](https://github.com/Maryam-Hussain00)
+
+---
+
+⭐ If you find this project useful, feel free to give it a star!
